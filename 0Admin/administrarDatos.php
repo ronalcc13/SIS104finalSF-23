@@ -53,7 +53,7 @@
 	$v4=$_POST['a_dateV'];
 	$v5=$_POST['a_precio'];
 	$v6=$_POST['a_cantidad'];
-	$con->query("INSERT INTO `productos`() VALUES ('','$v1','$v2', '$v3','$v4','$v5','$v6')");
+	$con->query("INSERT INTO productos(idS,titulo,f_cre,f_ven,precio,cantidad) VALUES ('$v1','$v2', '$v3','$v4','$v5','$v6')");
 	echo("<center><h1>Con Exito Agregado</h1></center>");
 	}
 ?>

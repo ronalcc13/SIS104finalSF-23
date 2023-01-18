@@ -28,7 +28,7 @@
 				<input class="l-pass" type="password" name="l_pass" placeholder="Contraseña" required />
 			</div>
 			
-			<input type="submit" value="Ingresar" name="l_login"/>
+			<input type="submit" value="Ingresar" name="l_login" onclick="location='visor.php'"/>
 			
 		</form>
 	</body>
@@ -36,8 +36,8 @@
 	<?php
 	
 	$type="ss";
-		if(isset($_POST['l_login']))
-		{
+		//if(isset($_POST['l_login']))
+		//{
 			header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
 			//$query = $con->prepare("SELECT id FROM admins WHERE username = ? AND password = ?;");
 			//$query->bind_param($type, $_POST['l_user'], $_POST['l_pass']);
@@ -56,7 +56,7 @@
 				// 	$_SESSION['username'] = $_POST['l_user'];
 					
 			//}
-		}
+		//}
 	?>
 	
 </html>

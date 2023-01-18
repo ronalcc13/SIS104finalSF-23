@@ -53,7 +53,7 @@
 			$va1=$_POST['b_isbn'];
 			$va2=$_POST['b_copies'];
 
-			$con->query("UPDATE `almacen_db`.`productos` SET `cantidad` = $va2 WHERE (`id` = $va1)");
+			$con->query("UPDATE `productos` SET `cantidad` = $va2 WHERE (`id` = $va1)");
 			$concat=($_POST['b_isbn']);
 			echo('<center><h1>Valor Actualizado '.$concat.' con '.$va2.'</h1></center>');
 		}
@@ -62,7 +62,7 @@
 
 			$ba1=$_POST['eliminar'];
 
-			$con->query("DELETE FROM `almacen_db`.`productos` WHERE (`id` = $ba1);			");
+			$con->query("DELETE FROM `productos` WHERE (`id` = $ba1);			");
 			echo('<center><h1>Se elimino '.$ba1.'</h1></center>');
 		}
 		

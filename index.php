@@ -1,14 +1,4 @@
-<?php
-	require "db_connect.php";
-	require "header-index.php";
-	session_start();
-	
-	if(empty($_SESSION['type']));
-	else if(strcmp($_SESSION['type'], "admin") == 0)
-		header("Location: librarian/home.php");
-	else if(strcmp($_SESSION['type'], "visor") == 0)
-		header("Location: member/home.php");
-?>
+
 
 <html>
 	<head>

@@ -19,13 +19,13 @@
 	<body>
 		<div id="allTheThings">
 			<div id="member">
-				<a href="1Visor">
+				<a href="/1Visor">
 					<img src="img/ic_member.svg" width="250px" height="auto"/><br />
 					&nbsp;Miembro
 				</a>
 			</div>
 			<div id="verticalLine">
-				<div id="librarian">
+				<div id="/librarian">
 					<a  href="0Admin">
 					<img src="img/ic_member.svg" width="250px" height="auto" /><br />
 					&nbsp;&nbsp;&nbsp;Administración

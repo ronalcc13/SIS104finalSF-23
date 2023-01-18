@@ -53,7 +53,7 @@
 					$_SESSION['type'] = "admins";
 					$_SESSION['id'] = $resultRow[0];
 					$_SESSION['username'] = $_POST['l_user'];
-					header('Location: home.php');
+					header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
 			}
 		}
 	?>

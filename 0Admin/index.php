@@ -38,7 +38,7 @@
 	$type="ss";
 		if(isset($_POST['l_login']))
 		{
-			header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
+			//header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
 			$query = $con->prepare("SELECT id FROM admins WHERE username = ? AND password = ?;");
 			$query->bind_param($type, $_POST['l_user'], $_POST['l_pass']);
 			$query->execute();
@@ -50,7 +50,7 @@
 			else 
 			{
 				 $resultRow = mysqli_fetch_array($result);
-				 $balance = $resultRow[1];
+				 //$balance = $resultRow[1];
 				 	$_SESSION['type'] = "admins";
 				 	$_SESSION['id'] = $resultRow[0];
 				 	$_SESSION['username'] = $_POST['l_user'];

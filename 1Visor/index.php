@@ -28,7 +28,7 @@
 				<input class="m-pass" type="password" name="m_pass" placeholder="Contraseña" required />
 			</div>
 			
-			<input type="submit" value="Ingresar" name="m_login"  onclick="location='sis104finalsf-23-production.up.railway.app/1Visor/home.php'"/>
+			<input type="submit" value="Ingresar" name="m_login"  onclick="location='https://sis104finalsf-23-production.up.railway.app/1Visor/home.php'"/>
 			
 			<br /><br /><br /><br />
 			

@@ -36,27 +36,27 @@
 	<?php
 	
 	$type="ss";
-		//if(isset($_POST['l_login']))
-		//{
-			//header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
-			//$query = $con->prepare("SELECT id FROM admins WHERE username = ? AND password = ?;");
-			//$query->bind_param($type, $_POST['l_user'], $_POST['l_pass']);
-			//$query->execute();
+		if(isset($_POST['l_login']))
+		{
+			header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
+			$query = $con->prepare("SELECT id FROM admins WHERE username = ? AND password = ?;");
+			$query->bind_param($type, $_POST['l_user'], $_POST['l_pass']);
+			$query->execute();
 
-			//$result = $query->get_result();
+			$result = $query->get_result();
 			
-			//if(mysqli_num_rows($result) != 1)
-				//echo error_without_field("Invalid username/password combination");
-			//else 
-			//{
-				// $resultRow = mysqli_fetch_array($result);
-				// $balance = $resultRow[1];
-				// 	$_SESSION['type'] = "admins";
-				// 	$_SESSION['id'] = $resultRow[0];
-				// 	$_SESSION['username'] = $_POST['l_user'];
+			if(mysqli_num_rows($result) != 1)
+				echo error_without_field("Invalid username/password combination");
+			else 
+			{
+				 $resultRow = mysqli_fetch_array($result);
+				 $balance = $resultRow[1];
+				 	$_SESSION['type'] = "admins";
+				 	$_SESSION['id'] = $resultRow[0];
+				 	$_SESSION['username'] = $_POST['l_user'];
 					
-			//}
-		//}
+			}
+		}
 	?>
 	
 </html>

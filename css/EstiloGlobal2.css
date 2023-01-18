@@ -1,0 +1,579 @@
+/*----------Form styles----------*/
+.cd-form {
+          width: 90%;
+          max-width: 600px;
+          margin: 4em auto;
+          font-size: 1.3rem;
+          color: #94aab0;
+          margin-bottom: 10px;
+          display: block;
+        }
+        
+        .cd-form::after {
+          clear: both;
+          content: "";
+          display: table;
+        }
+        
+        .cd-form legend {
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          font-size: 2rem;
+          border-bottom: 1px solid #ecf0f1;
+          display: block;
+          width: 100%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+        }
+        
+        .cd-form div {
+          position: relative;
+          margin: 20px 0;
+        }
+        
+        .cd-form input, .cd-form select {
+          font-family: "Open Sans", sans-serif;
+          font-size: 1.6rem;
+          color: #2b3e51;
+        }
+        
+        .cd-form input[type="text"],
+        .cd-form input[type="password"],
+        .cd-form input[type="email"],
+        .cd-form input[type="number"],
+        .cd-form select,
+        .cd-form legend {
+          display: block;
+          width: 100%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+        }
+        
+        .cd-form input[type="text"],
+        .cd-form input[type="password"],
+        .cd-form input[type="email"],
+        .cd-form input[type="number"],
+        .cd-form select {
+          padding: 12px;
+          border: 1px solid #cfd9db;
+          background-color: #ffffff;
+          border-radius: .25em;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+        }
+        
+        .cd-form input[type="text"]:focus,
+        .cd-form input[type="email"]:focus,
+        .cd-form input[type="password"]:focus,
+        .cd-form input[type="number"]:focus,
+        .cd-form select:focus {
+          outline: none;
+          border-color: #d75069;
+          box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+        }
+        
+        .cd-form .cd-select {
+          position: relative;
+        }
+        
+        .cd-form .cd-select::after {
+          content: '';
+          position: absolute;
+          z-index: 1;
+          right: 16px;
+          top: 50%;
+          margin-top: -8px;
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url("../img/ic_arrow.svg") no-repeat center center;
+          pointer-events: none;
+        }
+        
+        .cd-form select {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+          cursor: pointer;
+        }
+        
+        .cd-form select::-ms-expand {
+          display: none;
+        }
+        
+        .cd-form input[type="submit"] {
+          border: none;
+          background: #d75069;
+          border-radius: .25em;
+          padding: 16px 20px;
+          color: #ffffff;
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
+          float: right;
+          cursor: pointer;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+        }
+        
+        .cd-form input[type="submit"]:focus {
+          outline: none;
+          background: #2b3e51;
+        }
+        
+        .cd-form input[type="submit"]:active {
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          -o-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+        
+        .cd-form [required] {
+          background: url("img/ic_required.svg") no-repeat top right;
+        }
+        
+        .cd-form .error-message {
+                  display: none;
+        }
+        
+        .cd-form .error-message p {
+          background: #e94b35;
+          color: #ffffff;
+          font-size: 1.4rem;
+          text-align: center;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          border-radius: .25em;
+          padding: 16px;
+        }
+        
+        .cd-form .success-message p {
+          background: #4caf50;
+          color: #ffffff;
+          font-size: 1.4rem;
+          text-align: center;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          border-radius: .25em;
+          padding: 16px;
+        }
+        
+        .cd-form .error-field {
+          border-color: #e94b35 !important;
+        }
+        
+        @media only screen and (min-width: 600px) {
+          .cd-form div {
+            margin: 32px 0;
+          }
+          .cd-form legend + div {
+            margin-top: 20px;
+          }
+          .cd-form input[type="text"],
+          .cd-form input[type="password"],
+          .cd-form input[type="email"],
+          .cd-form input[type="number"],
+          .cd-form select {
+            padding: 16px;
+          }
+        }
+
+        /*********************************************************/
+
+/*----------Global styles----------*/
+*, *::after, *::before {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        
+        html {
+          font-size: 62.5%;
+        }
+        
+        body {
+          font-size: 1.8rem;
+          font-family: "Open Sans", sans-serif;
+          color: #2b3e51;
+          background-color: #ffffff;
+        }
+
+/*********************************************/
+html * {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        
+        *, *:after, *:before {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-size: 100%;
+          font-family: "Open Sans", sans-serif;
+          background-color: white;
+          margin: 0;
+        }
+        
+        img {
+          max-width: 100%;
+        }
+        
+        header {
+          position: relative;
+          height: 50px;
+          background: #343642;
+        }
+        
+        header #cd-logo {
+          float: left;
+          margin: 0 0 0 5%;
+          /* reduce logo size on mobile and make sure it is left aligned with the transform-origin property */
+          -webkit-transform-origin: 0 50%;
+          -moz-transform-origin: 0 50%;
+          -ms-transform-origin: 0 50%;
+          -o-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          -o-transform: scale(0.8);
+          transform: scale(0.8);
+        }
+        
+        header #cd-logo img , header #cd-logo p{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        
+        header #cd-logo p{
+                  color: #ffffff;
+                  font-weight: bold;
+                  font-size: 1.4rem;
+        }
+        
+        header::after {
+          /* clearfix */
+          content: '';
+          display: table;
+          clear: both;
+        }
+        
+        header a{
+                  text-decoration: none;
+        }
+        
+        @media only screen and (min-width: 768px) {
+          header {
+            height: 80px;
+          }
+          header #cd-logo {
+            margin: 4px 0 0 5%;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+
+        /****************/
+
+        #allTheThings {
+          width: 90%;
+          max-width: 800px;
+          text-align: center;
+          margin: 8em auto;
+          font-size: 1.3rem;
+          color: #94aab0;
+          display: block;
+        }
+        
+        a{
+                  color: #94aab0;
+                  text-decoration: none;
+        }
+        
+        #member{
+                  display: inline-block;
+        }
+        
+        #verticalLine {
+                  display: inline-block;
+                  margin-left: 20px;
+            border-left: solid #343642;
+        }
+        
+        #librarian-link{
+                  margin-left: 20px;
+        }
+        
+        #member, #librarian
+        {
+                  transition: all .2s ease-in-out;
+        }
+        
+        #member:hover, #librarian:hover
+        {
+                  transform: scale(1.1);
+        }
+        
+
+
+
+
+
+
+
+
+
+/*----------Custom checkbox----------*/
+.control-group {
+	display: inline-block;
+	width: 200px;
+	height: 210px;
+	margin: 10px;
+	padding: 30px;
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.control {
+	font-size: 18px;
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control__indicator {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: #e6e6e6;
+}
+
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #cccccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	-webkit-animation: cd-bounce 0.3s;
+	-moz-animation: cd-bounce 0.3s;
+	animation: cd-bounce 0.3s;
+	background: #2a498b;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	-webkit-animation: cd-bounce 0.3s;
+	-moz-animation: cd-bounce 0.3s;
+	animation: cd-bounce 0.3s;
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 4px;
+	left: 8px;
+	width: 5px;
+	height: 10px;
+	transform: rotate(45deg);
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+}
+
+@-webkit-keyframes cd-bounce {
+  0%, 100% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes cd-bounce {
+  0%, 100% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes cd-bounce {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+
+/************************************************/
+/*----------Custom radio button----------*/
+.control-group {
+	display: inline-block;
+	width: 200px;
+	height: 210px;
+	margin: 10px;
+	padding: 30px;
+	text-align: left;
+	vertical-align: top;
+	background: #ffffff;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.control {
+	font-size: 18px;
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: #e6e6e6;
+}
+
+.control--radio .control__indicator {
+	border-radius: 50%;
+}
+
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #cccccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	-webkit-animation: cd-bounce 0.3s;
+  -moz-animation: cd-bounce 0.3s;
+  animation: cd-bounce 0.3s;
+	background: #d75069;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	-webkit-animation: cd-bounce 0.3s;
+	-moz-animation: cd-bounce 0.3s;
+	animation: cd-bounce 0.3s;
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+
+@-webkit-keyframes cd-bounce {
+  0%, 100% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes cd-bounce {
+  0%, 100% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes cd-bounce {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+/************************************************************/

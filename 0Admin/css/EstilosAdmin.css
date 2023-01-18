@@ -1,0 +1,483 @@
+html * {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        
+        *, *:after, *:before {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-size: 100%;
+          font-family: "Open Sans", sans-serif;
+          background-color: white;
+          margin: 0;
+        }
+        
+        img {
+          max-width: 100%;
+        }
+        
+        header {
+          position: relative;
+          height: 50px;
+          background: #343642;
+        }
+        
+        header #cd-logo {
+          float: left;
+          margin: 0 0 0 5%;
+          color: #ecf0f1;
+          /* reduce logo size on mobile and make sure it is left aligned with the transform-origin property */
+          -webkit-transform-origin: 0 50%;
+          -moz-transform-origin: 0 50%;
+          -ms-transform-origin: 0 50%;
+          -o-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          -o-transform: scale(0.8);
+          transform: scale(0.8);
+        }
+        
+        header #cd-logo img , header #cd-logo p{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        
+        header #cd-logo p{
+                  font-size: 2.2rem !important;
+                  color: #29bb59;
+                  font-weight: bold;
+                  font-size: 1.4rem;
+        }
+        
+        header::after {
+          /* clearfix */
+          content: '';
+          display: table;
+          clear: both;
+        }
+        
+        header a {
+                  text-decoration: none;
+        }
+        
+        @media only screen and (min-width: 768px) {
+          header {
+            height: 80px;
+          }
+          header #cd-logo {
+            margin: 4px 0 0 5%;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+        
+        .dropbtn {
+                  background: url("../img/ic_librarian.svg") no-repeat 8px center;
+            background-color: #fa8f02;
+                  margin-top: 10%;
+            color: white;
+                  min-width: 120px;
+            padding: 0 8px 0 8px;
+            font-size: 16px;
+                  font-family: "Open Sans", sans-serif;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        
+        
+        #librarian-name{
+                  margin-left: 32px;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+                  float: right;
+                  margin-right: 5%;
+        }
+        
+        .dropdown-content {
+            display: none;
+                  right: 0;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+                  font-size: 1.6rem;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+                  background-color: #f1f1f1
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #40d373;;
+        }
+
+/***************************************************************/
+html * {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        
+        *, *:after, *:before {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-size: 100%;
+          font-family: "Open Sans", sans-serif;
+          background-color: white;
+          margin: 0;
+        }
+        
+        img {
+          max-width: 100%;
+        }
+        
+        header {
+          position: relative;
+          height: 50px;
+          background: #343642;
+        }
+        
+        header #cd-logo {
+          float: left;
+          margin: 0 0 0 5%;
+          /* reduce logo size on mobile and make sure it is left aligned with the transform-origin property */
+          -webkit-transform-origin: 0 50%;
+          -moz-transform-origin: 0 50%;
+          -ms-transform-origin: 0 50%;
+          -o-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          -o-transform: scale(0.8);
+          transform: scale(0.8);
+        }
+        
+        header #cd-logo img , header #cd-logo p{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        
+        header #cd-logo p{
+                  color: #50d79f;
+                  font-weight: bold;
+                  font-size: 2.2rem;
+        }
+        
+        header::after {
+          /* clearfix */
+          content: '';
+          display: table;
+          clear: both;
+        }
+        
+        @media only screen and (min-width: 768px) {
+          header {
+            height: 80px;
+          }
+          header #cd-logo {
+            margin: 4px 0 0 5%;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************/
+
+
+
+html {
+          font-size: 62.5%;
+        }
+        
+        body{
+                  font-family: "Open Sans", sans-serif;
+        }
+        
+        #allTheThings{
+                  width: 90%;
+                  max-width: 600px;
+                  margin: 4em auto;
+                  font-size: 1.3rem;
+                  color: #94aab0;
+                  margin-bottom: 10px;
+                  display: block;
+        }
+        
+        #allTheThings input[type="button"] {
+                  width: 100%;
+                  border: none;
+                  background: #199a4f;
+                  border-radius: .25em;
+                  padding: 16px 20px;
+                  margin-bottom: 20px;
+                  color: #ffffff;
+                  font-weight: bold;
+                  font-family: "Open Sans", sans-serif;
+                  font-size: 1.6rem;
+                  float: right;
+                  cursor: pointer;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  -ms-appearance: none;
+                  -o-appearance: none;
+                  appearance: none;
+        }
+        
+        #allTheThings input[type="button"]:focus {
+          outline: none;
+          background: #2b3e51;
+        }
+        
+        #allTheThings input[type="button"]:active {
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          -o-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+        
+        a{
+                  text-decoration: none;
+        }
+
+/***************************************************************/
+
+/*----------Custom Icons----------*/
+.cd-form .icon input{
+          padding-left: 54px !important;
+        }
+        .cd-form .l-user {
+          background: url("../img/ic_book_author.svg") no-repeat 16px center;
+        }
+        .cd-form [required].l-user {
+          background: url("../img/ic_book_author.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+        .cd-form .l-pass {
+          background: url("../../member/img/ic_member_username.svg") no-repeat 16px center;
+        }
+        .cd-form [required].l-pass {
+          background: url("../../member/img/ic_member_pass.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+/***************************************************************/
+
+/*----------Custom Icons----------*/
+.cd-form .icon input, .cd-form .icon select{
+          padding-left: 54px !important;
+        }
+        .cd-form .b-isbn {
+          background: url("../img/ic_book_isbn.svg") no-repeat 16px center;
+        }
+        .cd-form [required].b-isbn {
+          background: url("../img/ic_book_isbn.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+        .cd-form .b-title {
+          background: url("../img/ic_book_title.svg") no-repeat 16px center;
+        }
+        .cd-form [required].b-title {
+          background: url("../img/ic_book_title.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+        .cd-form .b-author {
+          background: url("../img/ic_book_author.svg") no-repeat 16px center;
+        }
+        .cd-form [required].b-author {
+          background: url("../img/ic_book_author.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+        .cd-form .b-category {
+          background: url("../img/ic_book_category.svg") no-repeat 16px center;
+        }
+        .cd-form .b-price {
+          background: url("../img/ic_book_price.svg") no-repeat 16px center;
+        }
+        .cd-form [required].b-price {
+          background: url("../img/ic_book_price.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+        .cd-form .b-copies {
+          background: url("../img/ic_book_copies.svg") no-repeat 16px center;
+        }
+        .cd-form [required].b-copies {
+          background: url("../img/ic_book_copies.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+
+/***************************************************************/
+
+/*----------Form styles----------*/
+.cd-form {
+        width: 100%;
+        max-width: 90%;
+          /* margin: 4em auto; */
+          font-size: 0.7rem;
+          color: #94aab0;
+          margin-bottom: 10px;
+          display: block;
+        }
+        
+        .cd-form::after {
+          clear: both;
+          content: "";
+          display: table;
+        }
+        
+        .cd-form legend {
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          font-size: 4rem;
+          border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .cd-form legend {
+          display: block;
+          width: 100%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+        }
+        
+        .cd-form input[type="submit"] {
+          border: none;
+          background: #326eb3;
+          border-radius: .25em;
+          padding: 16px 20px;
+          color: #ffffff;
+          font-weight: bold;
+          font-family: "Open Sans", sans-serif;
+          cursor: pointer;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+        }
+        
+        .no-touch .cd-form input[type="submit"]:hover {
+          background: #42a2e1;
+        }
+        
+        .cd-form input[type="submit"]:focus {
+          outline: none;
+          background: #2b3e51;
+        }
+        
+        .cd-form input[type="submit"]:active {
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          -o-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+        
+        .cd-form .error-message {
+                  display: none;
+        }
+        
+        .cd-form .error-message p {
+          background: #e94b35;
+          color: #ffffff;
+          font-size: 1.4rem;
+          text-align: center;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          border-radius: .25em;
+          padding: 16px;
+        }
+        
+        .cd-form .success-message p {
+          background: #4caf50;
+          color: #ffffff;
+          font-size: 1.4rem;
+          text-align: center;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          border-radius: .25em;
+          padding: 16px;
+        }
+        
+        .cd-form .error-field {
+          border-color: #e94b35 !important;
+        }
+/***************************************************************/
+
+/*----------Form styles----------*/
+
+/***************************************************************/
+/*----------Custom Icons----------*/
+.cd-form .icon input{
+          padding-left: 54px !important;
+        }
+        .cd-form .m-user {
+          background: url("../../member/img/ic_member_username.svg") no-repeat 16px center;
+        }
+        .cd-form [required].m-user {
+          background: url("../../member/img/ic_member_username.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+        .cd-form .m-balance {
+          background: url("../img/ic_book_price.svg") no-repeat 16px center;
+        }
+        .cd-form [required].m-balance {
+          background: url("../img/ic_book_price.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+/***************************************************************/
+/*----------Custom Icons----------*/
+.cd-form .icon input{
+          padding-left: 54px !important;
+        }
+        .cd-form .b-isbn {
+          background: url("../img/ic_book_isbn.svg") no-repeat 16px center;
+        }
+        .cd-form [required].b-isbn {
+          background: url("../img/ic_book_isbn.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }
+        .cd-form .b-copies {
+          background: url("../img/ic_book_copies.svg") no-repeat 16px center;
+        }
+        .cd-form [required].b-copies {
+          background: url("../img/ic_book_copies.svg") no-repeat 16px center, url("../img/ic_required.svg") no-repeat top right;
+        }

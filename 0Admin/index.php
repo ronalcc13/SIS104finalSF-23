@@ -28,7 +28,7 @@
 				<input class="l-pass" type="password" name="l_pass" placeholder="Contraseña" required />
 			</div>
 			
-			<input type="submit" value="Ingresar" name="l_login" onclick="location='https://sis104finalsf-23-production.up.railway.app/1Visor/home.php'"/>
+			<input type="submit" value="Ingresar" name="l_login" onclick="location='https://sis104finalsf-23-production.up.railway.app/0Admin/home.php'"/>
 			
 		</form>
 	</body>

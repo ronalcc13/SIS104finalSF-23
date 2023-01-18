@@ -43,18 +43,18 @@
 			$query->execute();
 
 			$result = $query->get_result();
-			
-			if(mysqli_num_rows($result) != 1)
+			header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
+			//if(mysqli_num_rows($result) != 1)
 				echo error_without_field("Invalid username/password combination");
-			else 
-			{
+			//else 
+			//{
 				// $resultRow = mysqli_fetch_array($result);
 				// $balance = $resultRow[1];
 				// 	$_SESSION['type'] = "admins";
 				// 	$_SESSION['id'] = $resultRow[0];
 				// 	$_SESSION['username'] = $_POST['l_user'];
-					header('Location: https://sis104finalsf-23-production.up.railway.app/0Admin/visor.php');
-			}
+					
+			//}
 		}
 	?>
 	
